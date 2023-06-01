@@ -1,6 +1,6 @@
 # Facial-Expression-Recognition-With-Facial-Landmarks
 
-以下為當初測試演算法的程式:
+以下為當初測試人臉辨識演算法的程式:
 
 [`video_RetinaFace.py`](https://github.com/hung334/Facial-Expression-Recognition-With-Facial-Landmarks/blob/main/video_RetinaFace.py)
 
@@ -12,9 +12,8 @@
 
 主要以 `video_face_mesh.py` 為主，內容包含可視化
 
-基於 `[video_face_mesh.py](https://github.com/hung334/Facial-Expression-Recognition-With-Facial-Landmarks/blob/main/video_face_mesh.py)` 修改出 [`make_datasets.py](https://github.com/hung334/Facial-Expression-Recognition-With-Facial-Landmarks/blob/main/make_datasets.py)` 。
-
-[`make_datasets.py](https://github.com/hung334/Facial-Expression-Recognition-With-Facial-Landmarks/blob/main/make_datasets.py)` 作用為轉換數據，將每秒每幀的3D面網格的x、y、z座標以CSV檔形式做儲存。
+基於 `video_face_mesh.py`修改出 `make_datasets.py` 。
+`make_datasets.py` 作用為轉換數據，將每秒每幀的3D面網格的x、y、z座標以CSV檔形式做儲存。
 
 在`./train/main.py` 測試各個回歸演算法的性能，以及儲存個模型的特徵重要性。
 
